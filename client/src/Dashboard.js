@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Fetch user data from an API endpoint
-    axios.get('http://localhost:5000/allprofiles',{
+    axios.get('https://mern-deploy-api-smoky.vercel.app/allprofiles',{
             headers:{
                 'x-token':localStorage.getItem('token')
             }
