@@ -13,7 +13,7 @@ const Individual = ({ match }) => {
   useEffect(() => {
     console.log(fullname)
     // Fetch user data from an API endpoint
-    axios.get("http://localhost:5000/myprofile", {
+    axios.get("https://mern-deploy-api-smoky.vercel.app/myprofile", {
         headers: {
           "x-token": localStorage.getItem("token"),
         },
