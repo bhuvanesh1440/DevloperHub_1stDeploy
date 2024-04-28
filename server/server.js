@@ -11,9 +11,18 @@ app.use(bodyParser.json());
 
 app.use(cors({origin:'*'}));
 
+app.use(cors(
+    {   
+        origin:[""],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials:true
+    }));
+
+    
+
 mongoose
   .connect(
-    "mongodb+srv://bhuvanesh1440:Bhuvi86400@cluster0.gc387f9.mongodb.net/",
+    "mongodb+srv://bhuvanesh1440:Bhuvi86400@cluster0.gc387f9.mongodb.net/test",
     // { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
