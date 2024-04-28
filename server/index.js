@@ -22,7 +22,7 @@ app.use(cors(
 
 mongoose
   .connect(
-    "mongodb+srv://bhuvanesh1440:Bhuvi86400@cluster0.gc387f9.mongodb.net/test",
+    "mongodb+srv://bhuvanesh1440:Bhuvi86400@cluster0.gc387f9.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0",
     // { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
