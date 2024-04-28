@@ -18,6 +18,15 @@ app.use(cors(
         credentials:true
     }));
 
+    app.use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin', 'https://mern-deploy-frontend-inky.vercel.app');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+        res.setHeader('Access-Control-Allow-Credentials', 'true');
+        next();
+      });
+      
+
     
 
 mongoose
@@ -172,3 +181,6 @@ app.get("/myreview", middleware, async (req, res) => {
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
 });
+
+
+
