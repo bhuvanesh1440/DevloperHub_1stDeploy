@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.use(cors(
     {   
-        origin:["https://mern-deploy-api-smoky.vercel.app"],
+        origin:["https://mern-deploy-frontend-inky.vercel.app"],
         methods:["POST","GET","PUT","DELETE"],
         credentials:true
     }));
