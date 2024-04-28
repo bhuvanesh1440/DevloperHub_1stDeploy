@@ -1,0 +1,17 @@
+.navbar{
+    width: 100%;
+    background-color: rgb(35, 34, 34);
+    height: 3rem;
+      
+}
+.navbar ul{
+    display: flex;   
+    flex-direction: row-reverse; 
+}
+.navbar ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0 5px;
+}
