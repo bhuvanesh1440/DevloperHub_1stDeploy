@@ -35,7 +35,7 @@ const Register = () => {
       
         try {
           // Send data to the server
-          const response = await axios.post('http://localhost:5000/register', formData);
+          const response = await axios.post('https://mern-deploy-api-smoky.vercel.app/register', formData);
           console.log(response.data);
           alert(response.data) // Assuming the response contains the result from the server
       
