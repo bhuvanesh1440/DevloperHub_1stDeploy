@@ -22,7 +22,7 @@ const Myprofile = () => {
 
     //review
     axios
-      .get("http://localhost:5000/myreview", {
+      .get("https://mern-deploy-api-smoky.vercel.app/myreview", {
         headers: {
           "x-token": localStorage.getItem("token"),
         },
