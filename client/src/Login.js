@@ -20,7 +20,7 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/login", data).then(
+    axios.post("https://mern-deploy-api-smoky.vercel.app/login", data).then(
       res => {
         console.log(res.data);
         localStorage.setItem('token', res.data.token);
