@@ -9,11 +9,11 @@ const app = express();
 const cors = require('cors');
 app.use(bodyParser.json());
 
-app.use(cors({origin:'*'}));
+// app.use(cors({origin:'*'}));
 
 app.use(cors(
     {   
-        origin:["*"],
+        origin:[""],
         methods:["POST","GET","PUT","DELETE"],
         credentials:true
     }));
