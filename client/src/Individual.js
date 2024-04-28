@@ -24,7 +24,7 @@ const Individual = ({ match }) => {
       });
 
     // Fetch reviews
-    axios.get("http://localhost:5000/myreview", {
+    axios.get("https://mern-deploy-api-smoky.vercel.app/myreview", {
         headers: {
           "x-token": localStorage.getItem("token"),
         },
